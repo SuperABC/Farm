@@ -151,9 +151,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="..\proc.md" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +167,9 @@
     <ClInclude Include="tower.h" />
     <ClInclude Include="trade.h" />
     <ClInclude Include="work.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\readme.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

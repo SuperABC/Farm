@@ -24,11 +24,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\proc.md">
-      <Filter>资源文件</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -73,5 +68,10 @@
     <ClInclude Include="tower.h">
       <Filter>头文件\idle</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\readme.md">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
