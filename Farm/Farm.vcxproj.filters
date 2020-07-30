@@ -68,6 +68,9 @@
     <ClInclude Include="tower.h">
       <Filter>头文件\idle</Filter>
     </ClInclude>
+    <ClInclude Include="mine.h">
+      <Filter>头文件\idle</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\readme.md">

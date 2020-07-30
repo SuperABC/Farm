@@ -4,6 +4,7 @@
 #include "player.h"
 #include "gamble.h"
 #include "tower.h"
+#include "mine.h"
 
 #define PLANT_HEIGHT PLANT_TYPES * 40
 #define ANIMAL_HEIGHT ANIMAL_TYPES * 40
@@ -2527,7 +2528,8 @@ refreshWidget(widgetName);
 				opened = false;
 			});
 			resizeFuntion(NULL);
-		}, []() {});
+			mineSetup();
+		}, mineLoop);
 	}));
 	getWidgetByName("mineIcon")->bgImg = loadBmp("source/mine.bmp");
 	refreshWidget("mineIcon");

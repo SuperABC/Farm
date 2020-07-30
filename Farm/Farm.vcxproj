@@ -159,6 +159,7 @@
     <ClInclude Include="fruit.h" />
     <ClInclude Include="gamble.h" />
     <ClInclude Include="garden.h" />
+    <ClInclude Include="mine.h" />
     <ClInclude Include="plant.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="pool.h" />
