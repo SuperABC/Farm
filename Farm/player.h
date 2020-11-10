@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <fstream>
 #include "winsgl.h"
+#include "text.h"
 #include "plant.h"
 #include "animal.h"
 #include "pool.h"
@@ -12,6 +13,7 @@
 #include "work.h"
 #include "research.h"
 #include "trade.h"
+#include "mine.h"
 #include <cmath>
 
 using std::string;
@@ -744,6 +746,8 @@ private:
 			workshops[WORK_CONSTRUCT] = new Workshop(WORK_CONSTRUCT);
 			enable["workBadage"] = 1;
 			enable["workStone"] = 1;
+
+			enable["mine"] = 1;
 			break;
 		}
 		case 27: {
@@ -1050,6 +1054,8 @@ public:
 	Train train;
 	Ship ship;
 	Plane plane;
+
+	Mine mine;
 
 	Player() {
 		name = "Íæ¼Ò";

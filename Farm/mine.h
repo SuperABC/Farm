@@ -1,9 +1,12 @@
 #pragma once
 #include "winsgl.h"
 
-void mineSetup() {
+class Mine {
+public:
+	int level = 1;
 
-}
-void mineLoop() {
 
-}
+};
+
+void mineSetup();
+void mineLoop();

@@ -1076,7 +1076,7 @@ refreshWidget(widgetName);
 						player->addWork(MANUAL_STARCH);
 					}));
 					SHOW_DESCRIBE("bakeryStarch", "bakeryDescribe", MANUAL_STARCH);
-					registerWidget(easyWidget(SG_BUTTON, "bakeryFruitPie", 430, 120, 50, 50, "水果馅饼", [](widget *obj) {
+					registerWidget(easyWidget(SG_BUTTON, "bakeryFruitPie", 430, 120, 50, 50, "水果派", [](widget *obj) {
 						if (!player->getEnable("workFruitPie"))return;
 						player->addWork(MANUAL_FRUITPIE);
 					}));
@@ -1482,7 +1482,7 @@ refreshWidget(widgetName);
 						player->addWork(MANUAL_POTTED);
 					}));
 					SHOW_DESCRIBE("flowerPotted", "flowerDescribe", MANUAL_POTTED);
-					registerWidget(easyWidget(SG_BUTTON, "flowerMixbundle", 130, 120, 50, 50, "混合花束", [](widget *obj) {
+					registerWidget(easyWidget(SG_BUTTON, "flowerMixbundle", 130, 120, 50, 50, "混合\n花束", [](widget *obj) {
 						if (!player->getEnable("workMixbundle"))return;
 						player->addWork(MANUAL_MIXBUNDLE);
 					}));
@@ -1492,7 +1492,7 @@ refreshWidget(widgetName);
 						player->addWork(MANUAL_PERFUME);
 					}));
 					SHOW_DESCRIBE("flowerPerfume", "flowerDescribe", MANUAL_PERFUME);
-					registerWidget(easyWidget(SG_BUTTON, "flowerPetal", 250, 120, 50, 50, "金银花瓣", [](widget *obj) {
+					registerWidget(easyWidget(SG_BUTTON, "flowerPetal", 250, 120, 50, 50, "金银\n花瓣", [](widget *obj) {
 						if (!player->getEnable("workPetal"))return;
 						player->addWork(MANUAL_PETAL);
 					}));
@@ -1931,7 +1931,7 @@ refreshWidget(widgetName);
 						player->addWork(MANUAL_LAMONADE);
 					}));
 					SHOW_DESCRIBE("drinkLamonade", "drinkDescribe", MANUAL_LAMONADE);
-					registerWidget(easyWidget(SG_BUTTON, "drinkMixfruit", 130, 120, 50, 50, "混合果汁", [](widget *obj) {
+					registerWidget(easyWidget(SG_BUTTON, "drinkMixfruit", 130, 120, 50, 50, "混合\n果汁", [](widget *obj) {
 						if (!player->getEnable("workMixfruit"))return;
 						player->addWork(MANUAL_MIXFRUIT);
 					}));
@@ -1941,7 +1941,7 @@ refreshWidget(widgetName);
 						player->addWork(MANUAL_MELONADE);
 					}));
 					SHOW_DESCRIBE("drinkMelonade", "drinkDescribe", MANUAL_MELONADE);
-					registerWidget(easyWidget(SG_BUTTON, "drinkUscoffee", 250, 120, 50, 50, "美式咖啡", [](widget *obj) {
+					registerWidget(easyWidget(SG_BUTTON, "drinkUscoffee", 250, 120, 50, 50, "美式\n咖啡", [](widget *obj) {
 						if (!player->getEnable("workUscoffee"))return;
 						player->addWork(MANUAL_USCOFFEE);
 					}));
@@ -2116,7 +2116,7 @@ refreshWidget(widgetName);
 						player->addWork(MANUAL_AUTOGUN);
 					}));
 					SHOW_DESCRIBE("fireAutogun", "fireDescribe", MANUAL_AUTOGUN);
-					registerWidget(easyWidget(SG_BUTTON, "fireCannon", 310, 120, 50, 50, "意大利炮", [](widget *obj) {
+					registerWidget(easyWidget(SG_BUTTON, "fireCannon", 310, 120, 50, 50, "意大\n利炮", [](widget *obj) {
 						if (!player->getEnable("workCannon"))return;
 						player->addWork(MANUAL_CANNON);
 					}));
@@ -2182,7 +2182,7 @@ refreshWidget(widgetName);
 						opened = false;
 					});
 					registerWidget(easyWidget(SG_OUTPUT, "diamondDescribe", 650, 10, 140, 160, "", [](widget *obj) {}));
-					registerWidget(easyWidget(SG_BUTTON, "diamondRing", 10, 120, 50, 50, "钻石戒指", [](widget *obj) {
+					registerWidget(easyWidget(SG_BUTTON, "diamondRing", 10, 120, 50, 50, "钻石\n戒指", [](widget *obj) {
 						if (!player->getEnable("workRing"))return;
 						player->addWork(MANUAL_RING);
 					}));
@@ -2521,7 +2521,7 @@ refreshWidget(widgetName);
 	refreshWidget("planeIcon");
 
 	registerWidget(easyWidget(SG_BUTTON, "mineIcon", 20, getHeight(SG_CANVAS) - 200, 240, 160, "", [](widget *obj) {
-		if (!player->getEnable("mine"))return;
+		//if (!player->getEnable("mine"))return;
 		NOREOPEN();
 		createWindow(400, 400, "矿山", BIT_MAP, []() {
 			windowFinish([]() {
